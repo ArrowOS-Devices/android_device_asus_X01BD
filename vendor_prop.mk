@@ -245,7 +245,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Time
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.timed.enable=true
+    persist.delta_time.enable=true
 
 # WFD display
 PRODUCT_PROPERTY_OVERRIDES += \
