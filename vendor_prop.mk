@@ -80,10 +80,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true \
-    persist.data.mode=concurrent \
+    persist.vendor.data.mode=concurrent \
     persist.radio.aosp_usr_pref_sel=true \
     persist.data.netmgrd.qos.enable=true \
-    ro.use_data_netmgrd=true
+    ro.vendor.use_data_netmgrd=true
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
