@@ -140,6 +140,11 @@ PRODUCT_PACKAGES += \
     libxml2 \
     SnapdragonCamera
 
+# Codec2 modules
+PRODUCT_PACKAGES += \
+    com.android.media.swcodec \
+    libsfplugin_ccodec
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
