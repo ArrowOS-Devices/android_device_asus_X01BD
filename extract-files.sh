@@ -76,9 +76,4 @@ IMSCMSERVICE_1_1="$BLOB_ROOT"/vendor/etc/permissions/com.qualcomm.qti.imscmservi
 sed -i "s|/system/framework/|/vendor/framework/|g" "$IMSCMSERVICE"	
 sed -i "s|/system/framework/|/vendor/framework/|g" "$IMSCMSERVICE_1_1
 
-patchelf --remove-needed libandroid.so "$BLOB_ROOT"/lib64/libarcsoft_panorama_burstcapture.so
-patchelf --remove-needed libandroid.so "$BLOB_ROOT"/lib64/libtensorflow_inference.so
-patchelf --remove-needed libandroid.so "$BLOB_ROOT"/vendor/lib/libarcsoft_night_shot.so
-patchelf --remove-needed libandroid.so "$BLOB_ROOT"/vendor/lib/libmpbase.so
-
-"$MY_DIR"/setup-makefiles.sh
+. "$MY_DIR"/setup-makefiles.sh
