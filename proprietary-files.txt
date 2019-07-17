@@ -1,4 +1,5 @@
 # ADSP
+bin/climax
 vendor/bin/adsprpcd
 vendor/bin/cdsprpcd
 vendor/lib/libadsp_default_listener.so
