@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/arrow_X01BD.mk
+
+COMMON_LUNCH_CHOICES := \
+    arrow_X01BD-userdebug \
+    arrow_X01BD-eng
+
