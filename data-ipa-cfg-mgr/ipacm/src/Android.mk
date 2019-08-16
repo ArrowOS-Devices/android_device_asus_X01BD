@@ -25,7 +25,21 @@ LOCAL_CFLAGS := -DFEATURE_IPA_ANDROID
 LOCAL_CFLAGS += -DFEATURE_IPACM_RESTART
 LOCAL_CFLAGS += -DFEATURE_ETH_BRIDGE_LE
 
-LOCAL_CFLAGS += -DFEATURE_IPACM_HAL -Wall -Werror -Wno-error=macro-redefined
+LOCAL_CFLAGS += -DFEATURE_IPACM_HAL
+LOCAL_CFLAGS += \
+        -Wall \
+        -Werror \
+        -Wno-constant-logical-operand \
+        -Wno-format \
+        -Wno-missing-field-initializers \
+        -Wno-sign-compare \
+        -Wno-sometimes-uninitialized \
+        -Wno-unused-parameter \
+        -Wno-unused-value \
+        -Wno-unused-variable \
+        -Wno-writable-strings \
+        -Wno-error=implicit-fallthrough
+
 ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 LOCAL_CFLAGS += -DDEBUG
 endif
