@@ -640,24 +640,31 @@ vendor/etc/qdcm_calib_data_nt36672_1080p_video_mode_dsi_txd_panel.xml
 vendor/etc/qdcm_calib_data_nt36672ah_1080p_video_mode_dsi_kd_panel.xml
 vendor/etc/qdcm_calib_data_td4310_1080p_video_mode_dsi_txd_panel.xml
 
-# DPM - from LA.UM.7.2.r1-06900-sdm660.0
-bin/dpmd|800f2319955ded8213da63085bca7c9a6947538e
-etc/dpm/dpm.conf|fec89edb6cff81424a6c3a730fed92efa3613f72
-etc/init/dpmd.rc|52ca6ad920a1804e4ff608113cece063730f5e0c
-etc/permissions/com.qti.dpmframework.xml|36b94c9338069e434b83359a92cdc7ff62b822df
-etc/permissions/dpmapi.xml|ded29f9befaef20a7ccee0c75427fda1d1d04890
-framework/com.qti.dpmframework.jar|2a6ff555ebff148a508fc7ea2fbeaee4b9a2dff6
-framework/dpmapi.jar|89ddc5bf0c4c88a3f341169edc4d89f9e834337b
-framework/tcmclient.jar|91b415288494fa208b5f5ec9fafa33c47e569c96
-lib64/com.qualcomm.qti.dpm.api@1.0.so|cb0f37ef7e826bcd8b34be047b8dc045a6853e73
-lib64/libdpmctmgr.so|611642251e77a1ce8a4bc59beaf4213bfc0cef8a
-lib64/libdpmfdmgr.so|84a6916dff3b3608e9ac83106df651ba995ca704
-lib64/libdpmframework.so|060a7200afccf7411969af4943908c92d752c032
-lib64/libdpmtcm.so|db125f21d6f9da6afcb8956ba2eabae58cbeb30e
--priv-app/dpmserviceapp/dpmserviceapp.apk|8f153185721c3383f8f5858aee3b0bb73220526c
-vendor/bin/dpmQmiMgr|0808c5a2d7b51611b3f976beb9552aabda796a41
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|7738cc1fdf4ce250285ed8c4130735d6cd0c598e
-vendor/lib64/libdpmqmihal.so|5d4647ac2ad8d386a44f5e9c5486287b21a7f758
+# DPM - from cephus-user-10-QKQ1.190716.003-9.9.3-release-keys
+-product/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
+product/bin/dpmd|2ef62dcc2eda82755516059b7062b9440dc345be
+product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
+product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
+product/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09
+product/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
+product/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
+product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
+product/lib/com.qualcomm.qti.dpm.api@1.0.so|b0a77b018412d4461a53dd92d655166bd7af9eb6
+product/lib/libdpmctmgr.so|0c14a1f9577a18e3037192902fb0f74eb11b289a
+product/lib/libdpmfdmgr.so|b10714050c28181190de418a67b54a02307dfba8
+product/lib/libdpmframework.so|7bb1e2bf7b0d7471e800051f81b7177854e6a360
+product/lib/libdpmtcm.so|e4506531a022cfbd00e9dc0d5bbad161edd775ed
+product/lib64/com.qualcomm.qti.dpm.api@1.0.so|d11451750a01f20bb11cec9925dd94239f3ccf6d
+product/lib64/libdpmctmgr.so|261f4db82c02f15a651389f8694c6f90e44d1be3
+product/lib64/libdpmfdmgr.so|65703eb4012d7889cc5d69d05ad0952ee128b9aa
+product/lib64/libdpmframework.so|553f7c6730e09fc1f4342eac1f577408fe3561f4
+product/lib64/libdpmtcm.so|6d61621f6ee0a7456f7bc68d66f3da121067f287
+vendor/bin/dpmQmiMgr|a4cc9d02de68fe738b5e9ba670ff9699f4b21c2e
+vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
+vendor/lib/com.qualcomm.qti.dpm.api@1.0.so|ac51c94f29719b8b95d30953e890c483ca259ee0
+vendor/lib/libdpmqmihal.so|ac66c39d15fdc9d0dd6f3942bd812cc44f8276f5
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|c5b0ef024255d9bb6ac7119dad6a40063de72066
+vendor/lib64/libdpmqmihal.so|9bc43f15e4e2e23b44a3a96647f02138372bc34a
 
 # DRM - Qualcomm Trusted Execution Enviornment
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
