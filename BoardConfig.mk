@@ -272,6 +272,7 @@ WIFI_DRIVER_STATE_CTRL_PARAM := "/sys/kernel/boot_wlan/boot_wlan"
 WIFI_DRIVER_STATE_OFF := 0
 WIFI_DRIVER_STATE_ON := 1
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 
 # inherit from the proprietary version
 -include vendor/asus/X01BD/BoardConfigVendor.mk
