@@ -346,6 +346,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     qti-telephony-common \
     ims-ext-common \
+    ims-ext-common_system \
     telephony-ext \
     ims-ext-common \
     ims_ext_common.xml \
@@ -353,7 +354,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext
+    telephony-ext \
+    ims-ext-common_system
 
 # Seccomp
 PRODUCT_COPY_FILES += \
