@@ -193,7 +193,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.zuk_msm8996
+    android.hardware.biometrics.fingerprint@2.1-service.x01bd
 
 # Excluded Input devices
 PRODUCT_COPY_FILES += \
