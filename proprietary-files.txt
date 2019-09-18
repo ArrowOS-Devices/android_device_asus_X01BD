@@ -777,8 +777,8 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 vendor/etc/permissions/qti_fingerprint_interface.xml
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/cdfinger.default.so
-vendor/lib64/hw/cdfinger.fingerprint.default.so
+vendor/lib64/hw/cdfinger.default.so|536f306af46c4b7d12d9a43df221567ec21feb32
+vendor/lib64/hw/cdfinger.fingerprint.default.so|e7fa88465f6ffb48fbe6232ba1881bc57c79ecf4
 vendor/lib64/hw/fingerprint.focaltech.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
