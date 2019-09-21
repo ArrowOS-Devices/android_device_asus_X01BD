@@ -53,8 +53,8 @@ lib64/libaptXHD_encoder.so
 
 # ASUS
 bin/nvram_btwifi:vendor/bin/nvram_btwifi
-lib64/libmmi.so
-lib/libmmi.so
+lib64/libmmi.so|c60086f3fade944f3381ca9e6db04857e3e3cb5f
+lib/libmmi.so|680687eb9d796f6f48b19238799f794c5e40b3cd
 
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
