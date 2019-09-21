@@ -581,7 +581,7 @@ etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
 etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
 framework/cneapiclient.jar|af7db889362e562a4c5073bb6aae32947218abf0
 framework/com.quicinc.cne.jar|56cb2e1ecb464f29c715a0a5e0a7393560ea1c8c
--priv-app/CNEService/CNEService.apk|c317748aca88d8acf9f611a0c11ac380c8ff622d
+-priv-app/CNEService/CNEService.apk|d8579ab4633111f5473b3be8c9da487504908167
 vendor/bin/cnd|e9735132b87af909c892362a0be81fa9a5ac3c3a
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
@@ -1080,7 +1080,7 @@ vendor/lib64/libqmiservices.so
 -app/datastatusnotification/datastatusnotification.apk
 -app/embms/embms.apk
 -framework/qcrilhook.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|956a4017d0ba7f68e6d225e57b40d3b2bcbb4837
 etc/permissions/embms.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
