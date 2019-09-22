@@ -214,6 +214,7 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/firmware_mnt/image:/firmware/image \
     /mnt/vendor/persist:/persist \
     /vendor/bt_firmware:/bt_firmware \
     /vendor/dsp:/dsp \
