@@ -21,6 +21,7 @@
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
 #include "BiometricsFingerprint.h"
+#include <cutils/properties.h>
 
 #include <inttypes.h>
 #include <unistd.h>
@@ -235,9 +236,20 @@ IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
 
 fingerprint_device_t* BiometricsFingerprint::openHal() {
     int err;
+    const char *fp_id, *fp_vendor;
     const hw_module_t *hw_mdl = nullptr;
+
+    hw_device_t *device = nullptr;
+    fingerprint_module_t const *module = nullptr;
+    fingerprint_device_t* fp_device = nullptr;
+
     ALOGD("Opening fingerprint hal library...");
-    if (0 != (err = hw_get_module(FINGERPRINT_HARDWARE_MODULE_ID, &hw_mdl))) {
+
+    fp_id = "cdfinger.fingerprint";
+    fp_vendor = "cdfinger";
+
+    err = hw_get_module(fp_id, &hw_mdl);
+    if (err) {
         ALOGE("Can't open fingerprint HW Module, error: %d", err);
         return nullptr;
     }
@@ -247,19 +259,22 @@ fingerprint_device_t* BiometricsFingerprint::openHal() {
         return nullptr;
     }
 
-    fingerprint_module_t const *module =
-        reinterpret_cast<const fingerprint_module_t*>(hw_mdl);
+    module = reinterpret_cast<const fingerprint_module_t*>(hw_mdl);
     if (module->common.methods->open == nullptr) {
         ALOGE("No valid open method");
         return nullptr;
     }
 
-    hw_device_t *device = nullptr;
+    device = nullptr;
 
-    if (0 != (err = module->common.methods->open(hw_mdl, nullptr, &device))) {
+    err = module->common.methods->open(hw_mdl, nullptr, &device);
+    if (err) {
         ALOGE("Can't open fingerprint methods, error: %d", err);
         return nullptr;
     }
+
+    ALOGD("%s module is working", fp_vendor);
+    property_set("persist.vendor.runin.fp", fp_vendor);
 
     if (kVersion != device->version) {
         // enforce version on new devices because of HIDL@2.1 translation layer
@@ -267,11 +282,10 @@ fingerprint_device_t* BiometricsFingerprint::openHal() {
         return nullptr;
     }
 
-    fingerprint_device_t* fp_device =
-        reinterpret_cast<fingerprint_device_t*>(device);
+    fp_device = reinterpret_cast<fingerprint_device_t*>(device);
 
-    if (0 != (err =
-            fp_device->set_notify(fp_device, BiometricsFingerprint::notify))) {
+    err = fp_device->set_notify(fp_device, BiometricsFingerprint::notify);
+    if (err) {
         ALOGE("Can't register fingerprint module callback, error: %d", err);
         return nullptr;
     }
