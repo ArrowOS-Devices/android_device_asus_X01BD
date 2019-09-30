@@ -1136,7 +1136,6 @@ vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/init/qcrild.rc
-vendor/lib/libjson.so
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/lib_remote_simlock.so
 vendor/lib/libconfigdb.so
@@ -1173,7 +1172,6 @@ vendor/lib/vendor.qti.hardware.radio.uim@1.0.so
 vendor/lib/vendor.qti.hardware.radio.uim@1.1.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so
-vendor/lib64/libjson.so
 vendor/lib64/libSubSystemShutdown.so
 vendor/lib64/lib_remote_simlock.so
 vendor/lib64/libconfigdb.so
