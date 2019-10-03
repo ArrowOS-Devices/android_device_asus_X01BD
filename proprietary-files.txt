@@ -666,71 +666,17 @@ vendor/lib/libdpmqmihal.so|ac66c39d15fdc9d0dd6f3942bd812cc44f8276f5
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|c5b0ef024255d9bb6ac7119dad6a40063de72066
 vendor/lib64/libdpmqmihal.so|9bc43f15e4e2e23b44a3a96647f02138372bc34a
 
-# DRM
-lib/libGPTEE_system.so
-lib64/libGPTEE_system.so
-vendor/bin/qseecomd
-vendor/lib/libGPTEE_vendor.so
-vendor/lib/libGPreqcancel.so
-vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib/libSecureUILib.so
-vendor/lib/libStDrvInt.so
-vendor/lib/libcppf.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/libhdcpsrm.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libqisl.so
-vendor/lib/librpmb.so
-vendor/lib/libcpion.so
-vendor/lib/libsecureui.so
-vendor/lib/libsecureui_svcsock.so
-vendor/lib/libssd.so
-vendor/lib/libtzdrmgenprov.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libcppf.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/liboemcrypto.so
-vendor/lib64/libqisl.so
-vendor/lib64/librpmb.so
-vendor/lib64/libcpion.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libssd.so
-vendor/lib64/libtzdrmgenprov.so
-
-# DRM - HDCP
-vendor/bin/hdcp1prov
-vendor/bin/hdcp2p2prov
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libwfdhdcpcp.so
-vendor/lib/libhdcp1prov.so
-vendor/lib/libhdcp2p2prov.so
-vendor/lib/libwfdhdcpcp.so
-vendor/lib/libwfdmodulehdcpsession.so
-
 # DRM - Qualcomm Trusted Execution Enviornment
-lib64/libQTEEConnector_system.so
-lib64/vendor.qti.hardware.qteeconnector@1.0.so
-lib/libQTEEConnector_system.so
-lib/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/libQTEEConnector_vendor.so
 vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+
+# DRM - HDCP
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib64/libmm-hdcpmgr.so
 
 # DRM Widevine firmware
 vendor/firmware/widevine.b02
@@ -762,6 +708,28 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libcpion.so
+
+# DRM - from LA.UM.7.2.r1-06900-sdm660.0
+vendor/bin/qseecomd|250cedbaf62d67a025985f033bb2e55b30352ff6
+vendor/lib/libQSEEComAPI.so|f3df1338303bf3200c072e295c8dda204811ac5f
+vendor/lib/libsdedrm.so|e87c434eb87debab1a99286adcb27aef11a0217f
+vendor/lib64/libdrmfs.so|df3af349c2942b937fe6e7272713360183f5cb26
+vendor/lib64/libdrmtime.so|e88599562d9c39f3ebad87f8c3a1ff0ae69f2eba
+vendor/lib64/libGPreqcancel_svc.so|a75a32d4cff28841783c0db222c08c618e52625b
+vendor/lib64/libGPreqcancel.so|19679b918e5dcce54f853b8019806cdb6d2da165
+vendor/lib64/libqisl.so|18c594b80a3eb7e1435985411457ef9fdeae862b
+vendor/lib64/libQSEEComAPI.so|09b3b8a2d3582d1f7d9c62e5622d91c9277d0808
+vendor/lib64/librpmb.so|0f7c2f160abda174057f202f0881bd4eeb08b8a6
+vendor/lib64/libsdedrm.so|46f06ebe14fc27bb4ee4fa1bf1b71fb0320cc098
+vendor/lib64/libsecureui_svcsock.so|08050cae1d923f997d04753b8a26f49fd0b7a16d
+vendor/lib64/libSecureUILib.so|29d8a7e3ca1fed82af9d2b46e04b71eeedab4709
+vendor/lib64/libssd.so|e8a688dac8c3f5d74e18cf81b646de7469201055
+vendor/lib64/libStDrvInt.so|77f66083e7105f919c675d9c6424eabee43fca39
+
+# DRM - TUI - from LA.UM.7.2.r1-06900-sdm660.0
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|5eeb2bdd91fd06d816c06ccc52a86d1ef5d50960
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|12953107e8f988bc37991d2ce4cb26f7e16beb63
 
 # ESE-Powermanager
 lib/vendor.qti.esepowermanager@1.0.so
