@@ -38,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
  # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.bt.max.hs.connections=2 \
+    persist.bt.max.hs.connections=5 \
     vendor.qcom.bluetooth.soc=cherokee \
     vendor.bluetooth.soc=cherokee \
     persist.vendor.btstack.enable.splita2dp=true \
@@ -152,6 +152,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vidc.enc.dcvs.extra-buff-count=2 \
     vidc.enc.target_support_bframe=1 \
     ro.config.media_vol_steps=30 \
+    
+    # Memory optimizations
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -237,7 +241,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Shutdown
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.shutdown_timeout=0 \
-    sys.vendor.shutdown.waittime=500
+    sys.vendor.shutdown.waittime=5
 
 # System prop for UBWC
 PRODUCT_PROPERTY_OVERRIDES += \
