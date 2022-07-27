@@ -12,6 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common ArrowOS stuff
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# Inherit lawnchair conditionally
+ifeq ($(LAWNCHAIR), true)
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+endif
+
 DEVICE_MAINTAINER := SonalSingh
 
 # Inherit from X01BD device
